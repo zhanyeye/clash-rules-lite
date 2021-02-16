@@ -16,6 +16,7 @@ var rules = [
   "||githubassets.com",
   ".git.io",
   "||git.io",
+  "||codepen.io"
 
   ".google.com",
   "||google.dev",
@@ -54,8 +55,9 @@ var rules = [
   "||gstatic.com",
   "||gvt0.com",
   "||gvt1.com",
-  "@@||redirector.gvt1.com",
   "||gvt3.com",
+  "@@||redirector.gvt1.com",
+  
 
 
   "@@|http://xx.wwwhost.biz",
@@ -190,7 +192,6 @@ var rules = [
   "||whatbrowser.org",
   "||widevine.com",
   "||withgoogle.com",
-  "||withyoutube.com",
   "||youtu.be",
   ".youtube.com",
   "||youtube.com",
@@ -215,7 +216,6 @@ var rules = [
   "||twitpic.com",
   ".twitter.com",
   "||twitter.com",
-  "||twitter.jp",
   "||vine.co",
 
   ".v2ex.com",
