@@ -16,7 +16,7 @@ var rules = [
   "||githubassets.com",
   ".git.io",
   "||git.io",
-  "||codepen.io"
+  "||codepen.io",
 
   ".google.com",
   "||google.dev",
