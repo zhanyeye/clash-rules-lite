@@ -17,6 +17,8 @@ var rules = [
   ".git.io",
   "||git.io",
   "||codepen.io",
+  "||jetbrains.com",
+  "||wikipedia.org",
 
   ".google.com",
   "||google.dev",
