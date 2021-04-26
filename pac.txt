@@ -20,6 +20,7 @@ var rules = [
   "||geeksforgeeks.org",
   "||wikipedia.org",
   "||onedrive.live.com",
+  "||jetbrains.com",
 
   ".google.com",
   "||google.dev",
