@@ -7,4 +7,3 @@
 
 + 📖 我会不断精简和添加 `PAC` 文件规则的~
 
-比较稳定的VPN推荐： https://www.stukry.com/home/ref/7903436350
