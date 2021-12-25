@@ -7,3 +7,24 @@
 
 + 📖 我会不断精简和添加 `PAC` 文件规则的~
 
+clash profile 补充脚本
+```
+rule-providers:
+  pac:
+    type: http
+    behavior: domain
+    url: "https://gitee.com/zhanzeye/PAC/raw/master/clash.txt"
+    path: ./rules/pac.yaml
+    interval: 86400
+script:
+  code: |
+    def main(ctx, metadata):
+        keywords = ["google", "github"]
+        for key in keywords:
+            if key in metadata["host"]:
+                return "🔰 节点选择"
+        if ctx.rule_providers["pac"].match(metadata):
+            return "🔰 节点选择"
+        else:
+            return "DIRECT"
+```
