@@ -13,7 +13,7 @@ rule-providers:
   pac:
     type: http
     behavior: domain
-    url: "https://gitee.com/zhanzeye/PAC/raw/master/clash.txt"
+    url: "https://gitee.com/zhanzeye/pac/raw/master/clash.txt"
     path: ./rules/pac.yaml
     interval: 86400
 script:
