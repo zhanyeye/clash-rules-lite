@@ -16,6 +16,7 @@ payload:
   - '+.wikipedia.org'
   - '+.onedrive.live.com'
   - '+.jetbrains.com'
+  - '+.heroku.com'
   - '+.google.com'
   - '+.google.dev'
   - '+.googleapis.cn'
