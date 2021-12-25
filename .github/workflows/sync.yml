@@ -15,4 +15,4 @@ jobs:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:zhanyeye/pac.git
           # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:zhanzeye/pac.git
+          destination-repo: git@gitee.com:zhanyeye/pac.git
