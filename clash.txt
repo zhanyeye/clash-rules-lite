@@ -5,7 +5,7 @@ payload:
   - '+.api.github.com/'
   - '+.gist.github.com'
   - '+.github.io'
-  - '+.github.io'
+  - '+.github.dev'
   - '+.githubapp.com'
   - '+.dasfelynsaterr.webcam'
   - '+.githubassets.com'
