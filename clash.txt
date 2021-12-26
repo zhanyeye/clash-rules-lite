@@ -22,6 +22,7 @@ payload:
   - '+.instagram.com'
   - '+.whatsapp.com'
   - '+.youtube.com'
+  - '+.ytimg.com'
   - '+.doubleclick.net'
   - '+.android.com'
   - '+.androidify.com'
