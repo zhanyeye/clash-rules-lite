@@ -14,8 +14,6 @@ payload:
   - '+.jetbrains.com'
   - '+.heroku.com'
   - '+.google.com'
-  - '+.reddit.com'
-  - '+.redditmedia.com'
   - '+.google.dev'
   - '+.google'
   - '+.stackoverflow.com'
