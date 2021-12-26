@@ -4,7 +4,7 @@
 + ✨ 因为 `GWFList` 添加的内容太多了，可能导致匹配速度慢
 + 🤣 所以打算只保留我需要的匹配规则。
 + 📖 我会不断精简和添加 `rules` 文件规则的~
-+ 🍒 规则详情: https://github.com/zhanyeye/clash-rules-for-dev/blob/master/rules.txt  
++ 🍒 代理列表: https://github.com/zhanyeye/clash-rules-for-dev/blob/master/rules.txt  
 
 #### 使用方法
 1. 拷贝一份订阅脚本到 `local file`.
