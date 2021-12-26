@@ -14,7 +14,7 @@ jobs:
       - name: Generate rules.txt file
         run: |
           echo "payload:" > rules.txt
-          curl -sSL ${custom_rules} | grep -E "^(full|domain):" | awk -F ':' '{printf "  - |+.%s|\n", $2}' | sed "s/|/'/g" >> rules.txt
+          curl -sSL ${custom_rules} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "  - |+.$2|\n"' | sed "s/|/'/g" >> gfw.txt
 
       - name: Move files to publish directory
         run: |
