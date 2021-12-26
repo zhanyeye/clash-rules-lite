@@ -11,11 +11,6 @@ jobs:
           echo "custom_rules=https://raw.githubusercontent.com/zhanyeye/clash-rules-for-dev/master/rules.txt" >> $GITHUB_ENV
         shell: bash
 
-      - name: Checkout the "hidden" branch
-        uses: actions/checkout@v2
-        with:
-          ref: hidden
-
       - name: Generate rules.txt file
         run: |
           echo "payload:" > rules.txt
