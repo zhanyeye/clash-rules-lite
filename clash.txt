@@ -51,7 +51,6 @@ payload:
   - '+.gvt1.com'
   - '+.gvt3.com'
   - '+.cdninstagram.com'
-  - '+.cdninstagram.com'
   - '+.facebook.br'
   - '+.facebook.com'
   - '+.facebook.com'
