@@ -35,7 +35,7 @@ script:
         else:
             return "DIRECT"
 ```
-3. 运行修改后的 `local file`
+3. 运行修改后的 `local file`, 最后将代理模式选择为 `script`
 <div align=center>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398721-88a75d2b-ce4d-4605-80a1-60871907f64d.png">
 </div>
