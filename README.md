@@ -20,7 +20,7 @@ rule-providers:
   pac:
     type: http
     behavior: domain
-    url: "https://gitee.com/zhanyeye/clash-rules-for-dev/raw/master/rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt"
     path: ./rules/pac.yaml
     interval: 86400
 script:
