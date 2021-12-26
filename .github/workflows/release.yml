@@ -1,4 +1,4 @@
-name: Generate RULE-SET for Premium Edition of Clash
+name: Generate RULES for Clash
 on: [ push, delete, create ]
 jobs:
   build:
@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Set variables
         run: |
-          echo "RELEASE_NAME=Released on $(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "RELEASE_NAME=Released on $(date +%Y.%m.%d-%H:%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "custom_rules=https://raw.githubusercontent.com/zhanyeye/clash-rules-for-dev/master/rules.txt" >> $GITHUB_ENV
         shell: bash
@@ -14,7 +14,7 @@ jobs:
       - name: Generate rules.txt file
         run: |
           echo "payload:" > rules.txt
-          curl -sSL ${custom_rules} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "  - |+.$2|\n"' | sed "s/|/'/g" >> gfw.txt
+          curl -sSL ${custom_rules} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "  - |+.$2|\n"' | sed "s/|/'/g" >> rules.txt
 
       - name: Move files to publish directory
         run: |
