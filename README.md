@@ -1,7 +1,6 @@
 # Clash Rules Lite
-自定义代理规则--为开发者准备:  因为 `GWFList` 添加的内容太多了，可能导致匹配速度慢，所以精简匹配规则。
+自定义代理规则，精简匹配规则，适合学生和开发者使用。
  
-
 + 🍒 代理规则列表：https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt
 
 #### 使用方法
