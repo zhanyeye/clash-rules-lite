@@ -1,4 +1,4 @@
-name: Generate RULES for Clash
+name: Generate Rules for Clash
 on: [ push, delete, create ]
 jobs:
   build:
