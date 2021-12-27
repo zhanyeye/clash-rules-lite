@@ -37,7 +37,7 @@ script:
         else:
             return "DIRECT"
 ```
-3. 运行修改后的 `local file`，切换成`Script`模式。
+3. 运行修改后的 `local file`，再切换成`Script`模式。
 <div align=center>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398721-88a75d2b-ce4d-4605-80a1-60871907f64d.png">
 </div>
