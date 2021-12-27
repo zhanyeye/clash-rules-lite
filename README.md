@@ -3,8 +3,13 @@
  <h2 align="center">Clash Rules Lite</h2>
  
  <p align="center">🍒 自定义代理规则，精简匹配规则，适合学生和开发者使用。</p>
- <p align="center"><img src="https://github.com/zhanyeye/clash-rules-lite/actions/workflows/release.yml/badge.svg" /></p>
-
+ 
+ <p align="center">
+  <a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/.github/workflows/release.yml">
+   <img src="https://github.com/zhanyeye/clash-rules-lite/actions/workflows/release.yml/badge.svg" />
+  </a>
+ </p>
+ 
  <p>
   <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt</pre>
  </p>
