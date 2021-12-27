@@ -11,7 +11,6 @@ gravatar.com
 wikipedia.org
 live.com
 jetbrains.com
-heroku.com
 google.com
 google.dev
 google
@@ -22,6 +21,8 @@ whatsapp.com
 youtube.com
 ytimg.com
 doubleclick.net
+heroku.com
+herokuapp.com
 android.com
 appspot.com
 autodraw.com
