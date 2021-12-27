@@ -1,8 +1,10 @@
 <p align="center">
  <img width="100px" src="https://github.com/Dreamacro/clash/raw/master/docs/logo.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Clash Rules Lite</h2>
- <p align="center">自定义代理规则，精简匹配规则，适合学生和开发者使用。</p>
- <p align="center">🍒 代理规则列表：https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt</p>
+ <p align="center">🍒 自定义代理规则，精简匹配规则，适合学生和开发者使用。</p>
+ <p>
+  <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt</pre>
+ </p>
 </p>
 
 
