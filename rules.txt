@@ -16,6 +16,8 @@ google.dev
 google
 notion.so
 notion.site
+amazonaws.com
+intercom.io
 stackoverflow.com
 facebook.com
 instagram.com
