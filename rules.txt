@@ -50,7 +50,6 @@ googleblog.com
 material.io
 pki.goog
 plus.codes
-schema.org
 tensorflow.org
 web.dev
 steamcommunity.com
