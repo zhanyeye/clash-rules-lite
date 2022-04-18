@@ -11,7 +11,7 @@
  </p>
  
  <p>
-  <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt</pre>
+  <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt</pre>
  </p>
  <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/rules.txt">代理规则列表</a></p>
 </p>
@@ -42,7 +42,7 @@ rule-providers:
   pac:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt"
     path: ./rules/pac.yaml
     interval: 86400
 script:
