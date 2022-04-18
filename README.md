@@ -37,6 +37,8 @@ proxies:
 proxy-groups:
     - { name: 'PROXY', type: select, proxies: ['S-101 | 香港', 'S-102 | 香港'] }
 rules:
+  - DOMAIN-KEYWORD,github,PROXY
+  - DOMAIN-KEYWORD,google,PROXY
   - RULE-SET,pac,PROXY
 rule-providers:
   pac:
