@@ -13,6 +13,7 @@
  <p>
   <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-for-dev@release/rules.txt</pre>
  </p>
+ <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/rules.txt">代理规则列表</a></p>
 </p>
 
 
