@@ -32,8 +32,8 @@ mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
 proxies:
-    - { name: 'S-101 | 香港', type: **, server: ****, port: **, cipher: ***, password: ***, udp: true }
-    - { name: 'S-102 | 香港', type: **, server: ****, port: **, cipher: ***, password: ***, udp: true }
+    - { name: 'S-101 | 香港', type: **, server: **, port: **, cipher: **, password: **, udp: true }
+    - { name: 'S-102 | 香港', type: **, server: **, port: **, cipher: **, password: **, udp: true }
 proxy-groups:
     - { name: 'PROXY', type: select, proxies: ['S-101 | 香港', 'S-102 | 香港'] }
 rules:
