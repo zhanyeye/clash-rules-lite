@@ -22,10 +22,21 @@
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398760-17324346-2fa3-4390-ad80-3d830ec8c58d.png">
 </div>
 
-2. 在 `local file` 脚本中追加 `rule-providers` 和 `script`。
-    + script 中 main 方法的返回值，需要根据自己情况定义（将"🔰 节点选择" 替换成 "你自己的代理"）
-
+2. 在 `local file` 脚本中，修改配置如下，保留你的 `proxies` 和 `proxy-groups`
 ```
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+proxies:
+    - { name: 'S-101 | 香港', type: ****, server: ****, port: ****, cipher: ****, password: ****, udp: true }
+    - { name: 'S-102 | 香港', type: ****, server: ****, port: ****, cipher: ****, password: ****, udp: true }
+proxy-groups:
+    - { name: 'PROXY', type: select, proxies: ['S-101 | 香港', 'S-102 | 香港'] }
+rules:
+  - RULE-SET,pac,PROXY
 rule-providers:
   pac:
     type: http
@@ -39,13 +50,14 @@ script:
         keywords = ["google", "github"]
         for key in keywords:
             if key in metadata["host"]:
-                return "🔰 节点选择"
+                return "PROXY"
         if ctx.rule_providers["pac"].match(metadata):
-            return "🔰 节点选择"
+            return "PROXY"
         else:
             return "DIRECT"
+
 ```
-3. 运行修改后的 `local file`，再切换成`Script`模式。
+3. 运行修改后的 `local file`，再切换成 `Rule` 或 `Script` 模式。
 <div align=center>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398721-88a75d2b-ce4d-4605-80a1-60871907f64d.png">
 </div>
