@@ -62,3 +62,8 @@ script:
 <div align=center>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398721-88a75d2b-ce4d-4605-80a1-60871907f64d.png">
 </div>
+
+
+
+#### 如何自定义
+fork 该仓库，修改`rules.txt`，github actions 会自动生成，记得将url中的用户名替换成自己的。
