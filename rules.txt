@@ -23,8 +23,6 @@ facebook.com
 instagram.com
 whatsapp.com
 youtube.com
-ytimg.com
-doubleclick.net
 heroku.com
 herokuapp.com
 android.com
@@ -59,3 +57,4 @@ v2ex.com
 debian.org
 medium.com
 spotify.com
+blocksite.co
