@@ -29,7 +29,7 @@ mixed-port: 7890
 allow-lan: true
 bind-address: '*'
 mode: rule
-log-level: info
+log-level: silent
 external-controller: '127.0.0.1:9090'
 proxies:
     - { name: '1-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }
