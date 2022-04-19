@@ -58,3 +58,4 @@ twitter.com
 v2ex.com
 debian.org
 medium.com
+spotify.com
