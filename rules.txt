@@ -58,3 +58,4 @@ debian.org
 medium.com
 spotify.com
 blocksite.co
+paypal.com
