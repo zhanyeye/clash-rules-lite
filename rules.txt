@@ -60,3 +60,4 @@ spotify.com
 blocksite.co
 paypal.com
 microsoft.com
+ubi.com
