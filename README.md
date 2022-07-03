@@ -2,7 +2,7 @@
  <img width="100px" src="https://github.com/Dreamacro/clash/raw/master/docs/logo.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">Clash Rules Lite</h2>
  
- <p align="center">🍒 自定义代理规则，精简匹配规则(内容健康)，适合学生和开发者使用。</p>
+ <p align="center">🍒 自定义代理规则，精简匹配规则(代理匹配速度明显提升)，适合学生和开发者使用。</p>
  
  <p align="center">
   <a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/.github/workflows/release.yml">
