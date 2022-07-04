@@ -61,3 +61,4 @@ blocksite.co
 paypal.com
 microsoft.com
 ubi.com
+fandom.com
