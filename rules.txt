@@ -64,3 +64,4 @@ ubi.com
 fandom.com
 acm.org
 letsencrypt.org
+sharepoint.com
