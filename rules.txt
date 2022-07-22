@@ -65,3 +65,4 @@ fandom.com
 acm.org
 letsencrypt.org
 sharepoint.com
+ytimg.com
