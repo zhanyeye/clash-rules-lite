@@ -68,3 +68,4 @@ sharepoint.com
 ytimg.com
 ggpht.com
 doubleclick.net
+typora.io
