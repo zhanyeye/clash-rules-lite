@@ -70,3 +70,4 @@ ggpht.com
 doubleclick.net
 typora.io
 typingclub.com
+vim-adventures.com
