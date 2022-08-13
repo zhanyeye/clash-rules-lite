@@ -19,6 +19,7 @@ notion.site
 amazonaws.com
 intercom.io
 stackoverflow.com
+hypothes.is
 facebook.com
 instagram.com
 whatsapp.com
@@ -70,4 +71,4 @@ ggpht.com
 doubleclick.net
 typora.io
 typingclub.com
-hypothes.is
+
