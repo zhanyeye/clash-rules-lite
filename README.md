@@ -76,7 +76,7 @@ script:
 </code></pre>
 
 
-3. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式
+4. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184479791-6e2c12ca-d28f-4009-839a-e9a06bdcff00.png">
 </div>
