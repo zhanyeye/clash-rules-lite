@@ -24,7 +24,7 @@
 </div>
 
 2. 在 `local file` 脚本中，修改配置如下，保留你的 `proxies` 和 `proxy-groups`
-```
+<pre><code> 
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -44,7 +44,7 @@ rule-providers:
   pac:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/<b>{YOUR-GITHUB-USERNAME}</b>/clash-rules-lite@release/rules.txt"
     path: ./rules/pac.yaml
     interval: 86400
 script:
@@ -59,7 +59,7 @@ script:
         else:
             return "DIRECT"
 
-```
+</code></pre>
 3. 运行修改后的 `local file`，再切换成 `Rule` 或 `Script` 模式。
 <div align=center>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398721-88a75d2b-ce4d-4605-80a1-60871907f64d.png">
