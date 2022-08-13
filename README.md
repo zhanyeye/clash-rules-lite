@@ -27,15 +27,15 @@
 
 #### 使用方法
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
-
-2. 鼠标右击订阅的配置文件选中“复制”，将复制的文件命名为`local`（因为更新订阅链接时会覆盖你的修改）
+2. 启动 GitHub Action
+3. 鼠标右击订阅的配置文件选中“复制”，将复制的文件命名为`local`（因为更新订阅链接时会覆盖你的修改）
 
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184479698-dbc0f06b-7313-4448-a694-cad3d9d5dbe3.png">
 </div>
 
 
-3. 在你复制的 `local` 配置中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `{YOUR-GITHUB-USERNAME}` 修改为你的配置（加粗的部分）
+4. 在你复制的 `local` 配置中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `{YOUR-GITHUB-USERNAME}` 修改为你的配置（加粗的部分）
 
 
 <pre><code> 
@@ -76,7 +76,7 @@ script:
 </code></pre>
 
 
-4. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式
+5. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184479791-6e2c12ca-d28f-4009-839a-e9a06bdcff00.png">
 </div>
