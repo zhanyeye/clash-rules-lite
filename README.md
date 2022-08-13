@@ -32,10 +32,10 @@ mode: rule
 log-level: silent
 external-controller: '127.0.0.1:9090'
 proxies:
-    - { name: '1-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }
-    - { name: '2-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }
+    <b>- { name: '1-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }</b>
+    <b>- { name: '2-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }</b>
 proxy-groups:
-    - { name: 'PROXY', type: select, proxies: ['1-香港', '2-香港'] }
+    <b>- { name: 'PROXY', type: select, proxies: ['1-香港', '2-香港'] }</b>
 rules:
   - DOMAIN-KEYWORD,github,PROXY
   - DOMAIN-KEYWORD,google,PROXY
