@@ -21,9 +21,9 @@
 #### 使用方法
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
 
-2. 鼠标右击订阅的配置文件选中“复制”，将拷贝的文件命名为`local`（因为当你更新订阅链接时会覆盖你的修改）
+2. 鼠标右击订阅的配置文件选中“复制”，将复制的文件命名为`local`（因为当你更新订阅链接时会覆盖你的修改）
 
-<div align=center>
+<div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184479698-dbc0f06b-7313-4448-a694-cad3d9d5dbe3.png">
 </div>
 
@@ -67,11 +67,17 @@ script:
             return "DIRECT"
 
 </code></pre>
-3. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式。
-<div align=center>
+
+
+3. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式
+<div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184479791-6e2c12ca-d28f-4009-839a-e9a06bdcff00.png">
 </div>
 
 
 #### 如何自定义
-修改`rules.txt`即可
+修改仓库中`rules.txt`，修改完后会自动更新并邮件提醒，然后在 Clash 上刷新 providers
+<div>
+    <img width="750" src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
+</div>
+
