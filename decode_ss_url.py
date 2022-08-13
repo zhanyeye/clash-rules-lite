@@ -1,3 +1,7 @@
+'''
+用于从订阅链接解析配置，生成自定义的配置文件
+'''
+
 import base64
 import requests
 import re
