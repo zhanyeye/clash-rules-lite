@@ -1,7 +1,7 @@
 name: Generate Rules for Clash
 on:
   fork
-  workflow_dispatch:
+  workflow_dispatch
   push:
     branches: [ main ]
     paths:
