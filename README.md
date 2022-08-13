@@ -75,7 +75,7 @@ script:
 </div>
 
 
-#### 如何自定义
+#### 自定义代理规则
 修改仓库中`rules.txt`，修改完后会自动更新并邮件提醒，然后在 Clash 上刷新 providers
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
