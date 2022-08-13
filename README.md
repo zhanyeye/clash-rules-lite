@@ -18,12 +18,19 @@
 
 
 #### 使用方法
-1. 拷贝一份订阅脚本到 `local file`。
+1. fork 该仓库。
+
+2. 鼠标右击订阅的配置文件选中复制，即拷贝一份本地的配置文件（因为当你更新订阅链接时会覆盖你的修改）
+
+
 <div align=center>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398760-17324346-2fa3-4390-ad80-3d830ec8c58d.png">
 </div>
 
-2. 在 `local file` 脚本中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `rule-providers->pac->url` 修改为你自己的配置（加粗的部分）
+
+3. 在 `local file` 脚本中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `rule-providers->pac->url` 修改为你自己的配置（加粗的部分）
+
+
 <pre><code> 
 mixed-port: 7890
 allow-lan: true
@@ -66,6 +73,5 @@ script:
 </div>
 
 
-
 #### 如何自定义
-fork 该仓库，修改`rules.txt`，github actions 会自动生成，记得将url中的用户名替换成自己的。
+修改`rules.txt`即可
