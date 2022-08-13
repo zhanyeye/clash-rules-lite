@@ -37,6 +37,5 @@ try:
     fh = open('config.yml', 'w')
     fh.write(res)
     fh.close()
-    
 except Exception:
     print("订阅url出现问题，请检测url或更新代码")
