@@ -1,5 +1,10 @@
 name: Generate Rules for Clash
-on: [ push, delete, create ]
+on: 
+  push:
+    branches: [ main ]
+    paths:
+      - 'rules.txt'
+      - '.github/workflows/**'
 jobs:
   build:
     runs-on: ubuntu-latest
