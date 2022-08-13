@@ -1,52 +1,15 @@
 """
 用于从订阅链接解析配置，生成自定义的配置文件
 """
-
 import base64
 import requests
 import re
 import urllib.request
 
-
-url = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # 订阅URL
+url = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_URL'  # 你自己的订阅URL
+template = 'mixed-port: 7890\nallow-lan: true\nbind-address: \'*\'\nmode: rule\nlog-level: silent\nexternal-controller: \'127.0.0.1:9090\'\nproxies:\n{proxy_list}proxy-groups:\n    - {{ name: \'PROXY\', type: select, proxies: {name_list} }}\nrules:\n  - DOMAIN-KEYWORD,github,PROXY\n  - DOMAIN-KEYWORD,google,PROXY\n  - RULE-SET,pac,PROXY\nrule-providers:\n  pac:\n    type: http\n    behavior: domain\n    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt"\n    path: ./rules/pac.yaml\n    interval: 86400\nscript:\n  code: |\n    def main(ctx, metadata):\n        keywords = ["google", "github"]\n        for key in keywords:\n            if key in metadata["host"]:\n                return "PROXY"\n        if ctx.rule_providers["pac"].match(metadata):\n            return "PROXY"\n        else:\n            return "DIRECT"\n'
 proxy_list = ''
 name_list = []
-
-
-template = '''mixed-port: 7890
-allow-lan: true
-bind-address: '*'
-mode: rule
-log-level: silent
-external-controller: '127.0.0.1:9090'
-proxies:
-{proxy_list}proxy-groups:
-    - {{ name: 'PROXY', type: select, proxies: {name_list} }}
-rules:
-  - DOMAIN-KEYWORD,github,PROXY
-  - DOMAIN-KEYWORD,google,PROXY
-  - RULE-SET,pac,PROXY
-rule-providers:
-  pac:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt"
-    path: ./rules/pac.yaml
-    interval: 86400
-script:
-  code: |
-    def main(ctx, metadata):
-        keywords = ["google", "github"]
-        for key in keywords:
-            if key in metadata["host"]:
-                return "PROXY"
-        if ctx.rule_providers["pac"].match(metadata):
-            return "PROXY"
-        else:
-            return "DIRECT"
-'''
-
-
 
 def decode_ss(ss):
     args = re.split('@|#', ss)
