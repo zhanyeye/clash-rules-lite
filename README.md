@@ -28,6 +28,10 @@
 #### 使用方法
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
 2. 启动 GitHub Action
+<div>
+    <img width="750" src="https://user-images.githubusercontent.com/35565811/184497873-e9e2e88b-19d6-44e1-8905-29cafe45a3e4.png">
+</div>
+
 3. 鼠标右击订阅的配置文件选中“复制”，将复制的文件命名为`local`（因为更新订阅链接时会覆盖你的修改）
 
 <div>
