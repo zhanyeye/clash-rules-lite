@@ -18,7 +18,7 @@
 
 
 #### 使用方法
-1. fork 该仓库。
+1. [fork 本仓库](https://github.com/zhanyeye/clash-rules-lite/fork) 。
 
 2. 鼠标右击订阅的配置文件选中复制，即拷贝一份本地的配置文件（因为当你更新订阅链接时会覆盖你的修改）
 
