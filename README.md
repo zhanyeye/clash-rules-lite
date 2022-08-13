@@ -27,7 +27,7 @@
 
 #### 使用方法
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
-2. 启动 GitHub Action，并手动触发 `Generate Rules for Clash` 工作流，若收到执行成功的邮件，表明 Github 端配置已完成
+2. 启动 GitHub Action，并手动触发 `Generate Rules for Clash` 工作流，若收到执行成功的邮件，则Github端配置已完成
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184497951-e9928870-ba5e-4487-8115-62ac9414f19a.png">
 </div>
