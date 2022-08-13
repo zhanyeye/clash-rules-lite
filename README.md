@@ -20,15 +20,14 @@
 #### 使用方法
 1. [fork 本仓库](https://github.com/zhanyeye/clash-rules-lite/fork) 。
 
-2. 鼠标右击订阅的配置文件选中复制，即拷贝一份本地的配置文件（因为当你更新订阅链接时会覆盖你的修改）
-
+2. 鼠标右击订阅的配置文件选中“复制”，将拷贝的文件命名为`local`（因为当你更新订阅链接时会覆盖你的修改）
 
 <div align=center>
-    <img width="750" src="https://user-images.githubusercontent.com/35565811/147398760-17324346-2fa3-4390-ad80-3d830ec8c58d.png">
+    <img width="750" src="https://user-images.githubusercontent.com/35565811/184479698-dbc0f06b-7313-4448-a694-cad3d9d5dbe3.png">
 </div>
 
 
-3. 在 `local file` 脚本中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `rule-providers->pac->url` 修改为你自己的配置（加粗的部分）
+3. 在你复制的 `local` 配置中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `{YOUR-GITHUB-USERNAME}` 修改为你的配置（加粗的部分）
 
 
 <pre><code> 
@@ -67,9 +66,9 @@ script:
             return "DIRECT"
 
 </code></pre>
-3. 运行修改后的 `local file`，再切换成 `Rule` 或 `Script` 模式。
+3. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式。
 <div align=center>
-    <img width="750" src="https://user-images.githubusercontent.com/35565811/147398721-88a75d2b-ce4d-4605-80a1-60871907f64d.png">
+    <img width="750" src="https://user-images.githubusercontent.com/35565811/184479791-6e2c12ca-d28f-4009-839a-e9a06bdcff00.png">
 </div>
 
 
