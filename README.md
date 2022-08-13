@@ -88,7 +88,7 @@ script:
 
 
 #### 自定义代理规则
-修改仓库中`rules.txt`，修改完后会自动更新并邮件提醒，然后在 Clash 上刷新 providers
+修改仓库中[rules.txt](https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt)，修改完后会自动更新并邮件提醒（有可能没有邮件提醒），然后在 Clash 上刷新 providers
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
 </div>
