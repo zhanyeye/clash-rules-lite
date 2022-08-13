@@ -81,3 +81,6 @@ script:
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
 </div>
 
+#### 高阶玩法
++ 使用python脚本解析订阅链接，自动生成改配置文件，需要你在 Python 代码中设置好你的订阅链接，代码见：[generate_config_quickly](https://github.com/zhanyeye/clash-rules-lite/blob/master/generate_config_quickly.py)
++ 注意该解析脚本是基于本人的订阅链接编写的，不一定适合所有机场，你可以自己修改代码，比较容易
