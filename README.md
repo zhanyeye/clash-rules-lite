@@ -13,8 +13,15 @@
  <p>
   <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt</pre>
  </p>
- <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/rules.txt">代理规则列表</a></p>
+ <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt">代理规则列表</a></p>
 </p>
+
+
+#### 工具介绍
++ Clash 默认的GFW代理规则内容太多，使用过程中明显感觉到有延迟
++ 该工具的目的是删除不必要的代理规则，方便用户自定义代理的内容
++ 代理规则放在github仓库中方便多设备同步，只需编辑[rules.txt](https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt)即可
++ 当用户更新规则后，使用Github Actions自动将规则缓存到免费CDN上 
 
 
 
