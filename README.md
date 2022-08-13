@@ -23,7 +23,7 @@
     <img width="750" src="https://user-images.githubusercontent.com/35565811/147398760-17324346-2fa3-4390-ad80-3d830ec8c58d.png">
 </div>
 
-2. 在 `local file` 脚本中，修改配置如下，保留你的 `proxies` 和 `proxy-groups`
+2. 在 `local file` 脚本中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `rule-providers->pac->url` 修改为你自己的配置（加粗的部分）
 <pre><code> 
 mixed-port: 7890
 allow-lan: true
