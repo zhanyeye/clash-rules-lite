@@ -7,6 +7,12 @@ import requests
 import re
 import urllib.request
 
+
+url = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # 订阅URL
+proxy_list = ''
+name_list = []
+
+
 template = '''mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -40,9 +46,7 @@ script:
             return "DIRECT"
 '''
 
-url = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # 订阅URL
-proxy_list = ''
-name_list = []
+
 
 def decode_ss(ss):
     args = re.split('@|#', ss)
