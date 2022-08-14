@@ -29,7 +29,7 @@
 #### 使用方法
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
 2. 启动 GitHub Action，并手动触发 `Generate Rules for Clash` 工作流，若执行成功，则Github端配置已完成
-
+   > 可以通过访问 `https://cdn.jsdelivr.net/gh/{YOUR-GITHUB-USERNAME}/clash-rules-lite@release/rules.txt`来验证
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184499434-12675c77-202f-40c9-9dab-2a8be31b9a76.png">
 </div>
