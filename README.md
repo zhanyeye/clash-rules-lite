@@ -30,8 +30,8 @@
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
 2. 启动 GitHub Action，并手动触发 `Generate Rules for Clash` 工作流，若执行成功，则Github端配置已完成
   ```
-   a. 设置完成后可通过访问  https://cdn.jsdelivr.net/gh/{YOUR-GITHUB-USERNAME}/clash-rules-lite@release/rules.txt  来验证
-   b. {YOUR-GITHUB-USERNAME} 需替换成自己的GitHub用户名
+  a. 设置完成后可通过访问 https://cdn.jsdelivr.net/gh/{YOUR-GITHUB-USERNAME}/clash-rules-lite@release/rules.txt 来验证
+  b. {YOUR-GITHUB-USERNAME} 需替换成自己的GitHub用户名
   ```
 
 <div>
