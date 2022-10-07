@@ -16,7 +16,7 @@
  <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt">代理规则列表</a></p>
 </p>
 
-> Tips: 有200M以上宽带，且有多设备同时使用代理需求，可以考虑上能刷固件的路由器，或者软路由，不用考虑这些事情~ （一般使用买便宜的就够了）
+> Tips: 有200M以上宽带，且有多设备同时使用代理需求，可以考虑上能刷固件的路由器，或者软路由，刷OpenWrt使用OpenClash插件，使用体验也会不错~ （一般使用买便宜的就够了）
 
 
 #### 工具介绍
