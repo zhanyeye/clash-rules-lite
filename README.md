@@ -16,6 +16,8 @@
  <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt">代理规则列表</a></p>
 </p>
 
+> Tips: 有条件（有多设备同时使用代理需求）可以考虑上软路由，很舒服，不用安装这些代理软件，不用考虑这些事情~
+
 
 #### 工具介绍
 + Clash 默认的GFW代理规则内容太多，使用过程中明显感觉到有延迟
