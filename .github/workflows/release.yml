@@ -15,14 +15,20 @@ jobs:
           echo "RELEASE_NAME=Released on $(date +%Y.%m.%d-%H:%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "custom_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/rules.txt" >> $GITHUB_ENV
-          echo "ms_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/ms-rules.txt" >> $GITHUB_ENV
+          echo "microsoft_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/microsoft-rules.txt" >> $GITHUB_ENV
+          echo "global_network_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/global-network-rules.txt" >> $GITHUB_ENV
+          echo "domestic_media_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/domestic-media-rules.txt" >> $GITHUB_ENV
+          echo "foreign_media_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/foreign-media-rules.txt" >> $GITHUB_ENV
         shell: bash
 
       - name: Generate rules.txt file
         run: |
           echo "payload:" > rules.txt
           curl -sSL ${custom_rules} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "  - |+.$2|\n"' | sed "s/|/'/g" >> rules.txt
-          curl -sSL ${ms_rules} > ms-rules.txt
+          curl -sSL ${microsoft_rules} > microsoft-rules.txt
+          curl -sSL ${global_network_rules} > global-network-rules.txt
+          curl -sSL ${domestic_media_rules} > domestic-media-rules.txt
+          curl -sSL ${foreign_media_rules} > foreign-media-rules.txt
 
       - name: Move files to publish directory
         run: |
