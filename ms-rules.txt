@@ -3,6 +3,7 @@ payload:
   - DOMAIN-KEYWORD,xbox  
   - DOMAIN-KEYWORD,msn 
   - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-SUFFIX,gamepass.com
   - DOMAIN-SUFFIX,aadrm.com
   - DOMAIN-SUFFIX,acompli.com
   - DOMAIN-SUFFIX,acompli.net
