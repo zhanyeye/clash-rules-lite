@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-KEYWORD,1drv
   - DOMAIN-KEYWORD,xbox  
+  - DOMAIN-KEYWORD,msn 
   - DOMAIN-KEYWORD,microsoft
   - DOMAIN-SUFFIX,aadrm.com
   - DOMAIN-SUFFIX,acompli.com
