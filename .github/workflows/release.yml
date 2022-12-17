@@ -19,6 +19,7 @@ jobs:
           echo "global_network_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/global-network-rules.txt" >> $GITHUB_ENV
           echo "domestic_media_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/domestic-media-rules.txt" >> $GITHUB_ENV
           echo "foreign_media_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/foreign-media-rules.txt" >> $GITHUB_ENV
+          echo "blacklist_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/blacklist-rules.txt" >> $GITHUB_ENV
         shell: bash
 
       - name: Generate rules.txt file
@@ -29,6 +30,7 @@ jobs:
           curl -sSL ${global_network_rules} > global-network-rules.txt
           curl -sSL ${domestic_media_rules} > domestic-media-rules.txt
           curl -sSL ${foreign_media_rules} > foreign-media-rules.txt
+          curl -sSL ${blacklist_rules} > blacklist-rules.txt
 
       - name: Move files to publish directory
         run: |
