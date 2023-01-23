@@ -1,5 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,raw.githubusercontent.com
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,jtvnw.net
   - DOMAIN-SUFFIX,ttvnw.net
@@ -41,7 +42,6 @@ payload:
   - DOMAIN-SUFFIX,media-amazon.com
   - DOMAIN,atv-ps.amazon.com
   - DOMAIN,fls-na.amazon.com
-  - DOMAIN,avodmp4s3ww-a.akamaihd.net
   - DOMAIN,d25xi40x97liuc.cloudfront.net
   - DOMAIN,dmqdd6hw24ucf.cloudfront.net
   - DOMAIN,dmqdd6hw24ucf.cloudfront.net
@@ -195,7 +195,6 @@ payload:
   - DOMAIN-SUFFIX,nowe.com
   - DOMAIN-SUFFIX,nowestatic.com
   - DOMAIN-SUFFIX,cbsi.com
-  - DOMAIN-SUFFIX,cbsaavideo.com
   - DOMAIN-SUFFIX,cbsivideo.com
   - DOMAIN-SUFFIX,paramountplus.com
   - DOMAIN-SUFFIX,pplusstatic.com
