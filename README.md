@@ -60,7 +60,9 @@ Tips:
 > c. **该仓中以 rules.txt 结尾的文件，都会缓存到 jsdelivr CDN中，可以自定义！**    
 
 
-### 在软路由的OpenClash中生效
+### 在OpenWrt的OpenClash中生效
+> OpenWrt 是一个软路由系统，如果你没有用到，请看下一节 “在 Clash Desktop 中生效”
+
 需要更新配置文件的`rules`和 `rule-providers`, 注意：
 + 用户名需要替换成用户自己的!!!
 + rules 中所属的group需要替换成自己的 `proxy-groups`!!!
@@ -95,7 +97,7 @@ rule-providers:
 
 
 
-### 在 Clash 中生效
+### 在 Clash Desktop 中生效
 
 1. 鼠标右击订阅的配置文件选中“复制”，将复制的文件命名为`local`（因为更新订阅链接时会覆盖你的修改）
 
@@ -164,7 +166,7 @@ rule-providers:
 </code></pre>
 
 
-3. 运行修改后的 `local` 配置，再切换成 `Rule` 或 `Script` 模式
+3. 运行修改后的 `local` 配置，再切换成 `Rule` 模式
 
 <div align="center">
   <center>
@@ -180,11 +182,19 @@ rule-providers:
 </div>
 
 
+### 自定义代理规则
++ 修改代码仓中以 rule.txt 结尾的文件即可
++ 修改后需要在clash中刷新，并重启clash才能生效
 
-#### 自定义代理规则
-修改仓库中[rules.txt](https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt)，修改完后会自动更新并邮件提醒（有可能没有邮件提醒），然后在 Clash 上刷新 providers
-<div>
-    <img width="750" src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
+<div align="center">
+  <center>
+    <img width="800" style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Clash 客户端上刷新 providers, 并重启clash</div>
+  </center>
 </div>
-
-
