@@ -99,7 +99,7 @@ rule-providers:
 
 <div align="center">
   <center>
-    <img style="border-radius: 0.3125em;
+    <img width="800" style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://user-images.githubusercontent.com/35565811/184479698-dbc0f06b-7313-4448-a694-cad3d9d5dbe3.png">
     <br>
@@ -110,10 +110,6 @@ rule-providers:
   </center>
 </div>
 
-
-<div>
-    <img width="750" src="">
-</div>
 
 
 2. 在你复制的 `local` 配置中，修改配置如下，注意 `proxies`, `proxy-groups` 和 `{YOUR-GITHUB-USERNAME}` 修改为你的配置（加粗的部分）
@@ -161,7 +157,7 @@ script:
 
 <div align="center">
   <center>
-    <img style="border-radius: 0.3125em;
+    <img width="800" style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://user-images.githubusercontent.com/35565811/184479791-6e2c12ca-d28f-4009-839a-e9a06bdcff00.png">
     <br>
