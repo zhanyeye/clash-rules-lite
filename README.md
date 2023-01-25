@@ -38,18 +38,20 @@
 
 ### 如何自定义
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
-2. 启动 GitHub Action，并手动触发 `Generate Rules for Clash` 工作流，若执行成功，则Github端配置已完成
-3. 编辑 `xx-rules.txt` 以自定义规则，**该仓中以 rules.txt 结尾的文件，都会缓存到 jsdelivr CDN中，可以自定义！**
-4. 在对应的 Clash 上刷新配置文件。
+2. 触发 GitHub Action 中的 `Generate Rules for Clash` 工作流
+3. 编辑 `xx-rules.txt` 以自定义规则
+4. 在对应的 Clash 上刷新配置文件
 
-<div>
+<div align="center">
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184524456-e956ef59-4577-44e9-9b99-4a8684b77e40.png">
 </div>
 
 
 
-> a. 设置完成后可通过访问 https://cdn.jsdelivr.net/gh/{GITHUB-USERNAME}/clash-rules-lite@release/rules.txt 来验证    
-> b. {GITHUB-USERNAME} 需替换成自己的GitHub用户名
+> a. 可通过访问进行验证 https://cdn.jsdelivr.net/gh/{GITHUB-USERNAME}/clash-rules-lite@release/    
+> b. {GITHUB-USERNAME} 需替换成自己的GitHub用户名   
+> c. **该仓中以 rules.txt 结尾的文件，都会缓存到 jsdelivr CDN中，可以自定义！**    
+
 
 ### 在软路由的OpenClash中生效
 
