@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN-KEYWORD,github
   - DOMAIN-SUFFIX,steampowered.com
   - DOMAIN-SUFFIX,raw.githubusercontent.com
   - DOMAIN-SUFFIX,githubusercontent.com
