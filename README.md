@@ -127,8 +127,14 @@ external-controller: '127.0.0.1:9090'
 proxies:
     <b>- { name: '1-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }</b>
     <b>- { name: '2-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }</b>
+    <b>- ...</b>
 proxy-groups:
-    <b>- { name: 'PROXY', type: select, proxies: ['1-香港', '2-香港'] }</b>
+    <b>- { name: '🔰 节点选择', type: select, proxies: ['1-香港', '2-香港'] }</b>
+    <b>- { name: '🎯 全球直连', type: select, proxies: ['DIRECT'] }</b>
+    <b>- { name: '🛑 全球拦截', type: select, proxies: ['REJECT'] }</b>
+    <b>- { name: 'Ⓜ️ 微软服务', type: select, proxies: ['🎯 全球直连', ] }</b>
+    <b>- { name: '🐟 漏网之鱼', type: select, proxies: ['🔰 节点选择'] }</b>
+    <b>- ...</b>
 rules:
   - RULE-SET,Proxy,🔰 节点选择
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
