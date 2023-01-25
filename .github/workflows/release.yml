@@ -11,23 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Set variables
-        run: |
-          echo "RELEASE_NAME=Released on $(date +%Y.%m.%d-%H:%M)" >> $GITHUB_ENV
-          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
       - name: Generate rules.txt file
         run: |
-          for x in $(find $pwd -name "*rules.txt" | xargs ls -d); do 
-            echo ${x}
-            file=${x#*./}
-            curl -sSL "https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/${file}" > ${file}
+          # 设置环境变量
+          echo "RELEASE_NAME=Released on $(date +%Y.%m.%d-%H:%M)" >> $GITHUB_ENV
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          # 下载*rules.txt文件
+          mkdir publish
+          for file in $(find $pwd -name "*rules.txt" | xargs ls -d); do 
+            curl -sSL "https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/${file#*./}" > "./publish/${file#*./}"
           done
-
-      - name: Move files to publish directory
-        run: |
-          mkdir -p publish
-          cp *.txt ./publish/
+          cd publish
+          ls -al
 
       - name: Release and upload assets
         uses: softprops/action-gh-release@v0.1.6
