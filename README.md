@@ -1,30 +1,29 @@
 <p align="center">
- <img width="100px" src="https://github.com/Dreamacro/clash/raw/master/docs/logo.png" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">Clash Rules Lite</h2>
+  <img width="100px" src="https://github.com/Dreamacro/clash/raw/master/docs/logo.png" align="center" alt="GitHub Readme Stats" />
+  <h2 align="center">Clash Rules Lite</h2>
  
- <p align="center">🍒 自定义代理规则，精简匹配规则 (<b>代理匹配速度明显提升</b>)。</p>
+  <p align="center">🍒 自定义代理规则，精简匹配规则 (<b>代理匹配速度明显提升</b>)。</p>
  
- <p align="center">
-  <a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/.github/workflows/release.yml">
-   <img src="https://github.com/zhanyeye/clash-rules-lite/actions/workflows/release.yml/badge.svg" />
-  </a>
- </p>
+  <p align="center">
+    <a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/.github/workflows/release.yml">
+    <img src="https://github.com/zhanyeye/clash-rules-lite/actions/workflows/release.yml/badge.svg" />
+    </a>
+  </p>
  
- <p>
+  <p align="center">
+    <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/proxy-rules.txt">代理规则列表</a> |
+    <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/microsoft-rules.txt">微软服务规则列表</a> |
+    <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/blacklist-rules.txt">黑名单规则列表</a>
+  </p>
+
+</p>
+
+<p>
   <pre align="center">
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/proxy-rules.txt    
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/microsoft-rules.txt
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/blacklist-rules.txt</pre>
- </p>
- <p align="center">
- <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/proxy-rules.txt">代理规则列表</a> |
- <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/microsoft-rules.txt">微软服务规则列表</a> |
- <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/blacklist-rules.txt">黑名单规则列表</a>
- </p>
-
 </p>
-
-> Tips: 有200M以上宽带，且有多设备同时使用代理需求，可以考虑上能刷固件的路由器，或者软路由，刷OpenWrt使用OpenClash插件，使用体验也会不错~ （一般使用买便宜的就够了）
 
 
 ### 工具介绍
@@ -47,9 +46,8 @@
 </div>
 
 
-
-> a. 可通过访问进行验证 https://cdn.jsdelivr.net/gh/{GITHUB-USERNAME}/clash-rules-lite@release/    
-> b. {GITHUB-USERNAME} 需替换成自己的GitHub用户名   
+Tips:
+> a. 可通过访问进行验证 https://cdn.jsdelivr.net/gh/{你的GITHUB用户名}/clash-rules-lite@release/    
 > c. **该仓中以 rules.txt 结尾的文件，都会缓存到 jsdelivr CDN中，可以自定义！**    
 
 
