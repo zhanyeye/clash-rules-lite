@@ -12,7 +12,7 @@
  
  <p>
   <pre align="center">
-  https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/proxy-rules.txt
+  https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/proxy-rules.txt    
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/microsoft-rules.txt
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/blacklist-rules.txt</pre>
  </p>
@@ -27,7 +27,7 @@
 > Tips: 有200M以上宽带，且有多设备同时使用代理需求，可以考虑上能刷固件的路由器，或者软路由，刷OpenWrt使用OpenClash插件，使用体验也会不错~ （一般使用买便宜的就够了）
 
 
-#### 工具介绍
+### 工具介绍
 + Clash 默认的GFW代理规则内容太多，使用过程中明显感觉到有延迟
 + 本工具的想法是代理规则一边用一边添加，毕竟我们访问的网站应该很有限
 + 该工具的目的是删除不必要的代理规则，方便用户自定义代理的内容
@@ -36,17 +36,27 @@
 + 用户在 github 上更新规则后，在 clash 的 providers 上点击刷新即可拉取更新
 
 
-#### 使用方法
+### 如何自定义
 1. fork 本仓库：[Fork zhanyeye/clash-rules-lite](https://github.com/zhanyeye/clash-rules-lite/fork) 
 2. 启动 GitHub Action，并手动触发 `Generate Rules for Clash` 工作流，若执行成功，则Github端配置已完成
-  ```
-  a. 设置完成后可通过访问 https://cdn.jsdelivr.net/gh/{GITHUB-USERNAME}/clash-rules-lite@release/rules.txt 来验证
-  b. {GITHUB-USERNAME} 需替换成自己的GitHub用户名
-  ```
+3. 编辑 `xx-rules.txt` 以自定义规则，**该仓中以 rules.txt 结尾的文件，都会缓存到 jsdelivr CDN中，可以自定义！**
+4. 在对应的 Clash 上刷新配置文件。
 
 <div>
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184524456-e956ef59-4577-44e9-9b99-4a8684b77e40.png">
 </div>
+
+
+
+> a. 设置完成后可通过访问 https://cdn.jsdelivr.net/gh/{GITHUB-USERNAME}/clash-rules-lite@release/rules.txt 来验证    
+> b. {GITHUB-USERNAME} 需替换成自己的GitHub用户名
+
+### 在软路由的OpenClash中生效
+
+
+
+
+### 在 Clash 中生效
 
 3. 鼠标右击订阅的配置文件选中“复制”，将复制的文件命名为`local`（因为更新订阅链接时会覆盖你的修改）
 
@@ -108,6 +118,4 @@ script:
     <img width="750" src="https://user-images.githubusercontent.com/35565811/184480450-c24dd895-2b8a-4cfb-8f9e-77843c3df5af.png">
 </div>
 
-#### 造轮子实现奇怪的需求
-+ 使用python脚本解析订阅链接，自动生成改配置文件，需要你在 Python 代码中设置好你的订阅链接，代码见：[generate_config_quickly.py](https://github.com/zhanyeye/clash-rules-lite/blob/main/generate_config_quickly.py)
-+ 注意该解析脚本是基于本人的订阅链接编写的，不一定适合所有机场，你可以自己修改代码，比较容易
+
