@@ -83,7 +83,7 @@ rule-providers:
   Microsoft:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/microsoft-rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/microsoft-rules.txt"
     path: ./providers/rule-microsoft.yaml
     interval: 86400
   Backlist:
@@ -153,7 +153,7 @@ rule-providers:
   Microsoft:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/microsoft-rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/microsoft-rules.txt"
     path: ./providers/rule-microsoft.yaml
     interval: 86400
   Backlist:
