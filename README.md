@@ -47,7 +47,7 @@
 
 
 Tips:
-> a. 可通过访问进行验证 https://cdn.jsdelivr.net/gh/{你的GITHUB用户名}/clash-rules-lite@release/    
+> a. 可通过访问进行验证 `https://cdn.jsdelivr.net/gh/{你的GITHUB用户名}/clash-rules-lite@release/`   
 > c. **该仓中以 rules.txt 结尾的文件，都会缓存到 jsdelivr CDN中，可以自定义！**    
 
 
