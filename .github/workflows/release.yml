@@ -14,6 +14,7 @@ jobs:
         run: |
           echo "RELEASE_NAME=Released on $(date +%Y.%m.%d-%H:%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          ls -al
           echo "custom_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/rules.txt" >> $GITHUB_ENV
           echo "microsoft_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/microsoft-rules.txt" >> $GITHUB_ENV
           echo "global_network_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/global-network-rules.txt" >> $GITHUB_ENV
