@@ -15,8 +15,10 @@ jobs:
           echo "RELEASE_NAME=Released on $(date +%Y.%m.%d-%H:%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "custom_rules=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/rules.txt" >> $GITHUB_ENV
+          ls -al
           for x in $(find $pwd -name "*rules.txt" | xargs ls -d); 
           do 
+            echo ${x}
             file=${x#*./}
             echo "${file%.txt}=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/${file}" >> $GITHUB_ENV;
           done
@@ -24,6 +26,7 @@ jobs:
 
       - name: Generate rules.txt file
         run: |
+          ls -al
           echo "payload:" > rules.txt
           curl -sSL ${custom_rules} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "  - |+.$2|\n"' | sed "s/|/'/g" >> rules.txt
           # curl -sSL ${microsoft_rules} > microsoft-rules.txt
