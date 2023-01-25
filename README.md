@@ -11,9 +11,17 @@
  </p>
  
  <p>
-  <pre align="center">https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/rules.txt</pre>
+  <pre align="center">
+  https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/proxy-rules.txt
+  https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/microsoft-rules.txt
+  https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/blacklist-rules.txt</pre>
  </p>
- <p align="center"><a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/rules.txt">代理规则列表</a></p>
+ <p align="center">
+ <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/proxy-rules.txt">代理规则列表</a> |
+ <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/microsoft-rules.txt">微软服务规则列表</a> |
+ <a href="https://github.com/zhanyeye/clash-rules-lite/blob/main/blacklist-rules.txt">黑名单规则列表</a>
+ </p>
+
 </p>
 
 > Tips: 有200M以上宽带，且有多设备同时使用代理需求，可以考虑上能刷固件的路由器，或者软路由，刷OpenWrt使用OpenClash插件，使用体验也会不错~ （一般使用买便宜的就够了）
