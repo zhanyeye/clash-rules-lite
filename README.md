@@ -61,7 +61,9 @@ Tips:
 
 
 ### 在软路由的OpenClash中生效
-需要更新配置文件的`rules`和 `rule-providers`, 注意：用户名需要替换成用户自己的！！
+需要更新配置文件的`rules`和 `rule-providers`, 注意：
++ 用户名需要替换成用户自己的!!!
++ rules 中所属的group需要替换成自己的 `proxy-groups`!!!
 ```
 rules:
   - RULE-SET,Proxy,🔰 节点选择
@@ -128,27 +130,30 @@ proxies:
 proxy-groups:
     <b>- { name: 'PROXY', type: select, proxies: ['1-香港', '2-香港'] }</b>
 rules:
-  - DOMAIN-KEYWORD,github,PROXY
-  - DOMAIN-KEYWORD,google,PROXY
-  - RULE-SET,pac,PROXY
+  - RULE-SET,Proxy,🔰 节点选择
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Backlist,🛑 全球拦截
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
 rule-providers:
-  pac:
+  Proxy:
     type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/<b>{YOUR-GITHUB-USERNAME}</b>/clash-rules-lite@release/rules.txt"
-    path: ./rules/pac.yaml
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/foreign-media-rules.txt"
+    path: ./providers/rule-proxy.yaml
     interval: 86400
-script:
-  code: |
-    def main(ctx, metadata):
-        keywords = ["google", "github"]
-        for key in keywords:
-            if key in metadata["host"]:
-                return "PROXY"
-        if ctx.rule_providers["pac"].match(metadata):
-            return "PROXY"
-        else:
-            return "DIRECT"
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/ms-rules.txt"
+    path: ./providers/rule-microsoft.yaml
+    interval: 86400
+  Backlist:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/blacklist-rules.txt"
+    path: ./providers/rule-backlist.yaml
+    interval: 86400 
 
 </code></pre>
 
