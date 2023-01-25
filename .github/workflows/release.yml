@@ -26,11 +26,11 @@ jobs:
         run: |
           echo "payload:" > rules.txt
           curl -sSL ${custom_rules} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "  - |+.$2|\n"' | sed "s/|/'/g" >> rules.txt
-          curl -sSL ${microsoft_rules} > microsoft-rules.txt
-          curl -sSL ${global_network_rules} > global-network-rules.txt
-          curl -sSL ${domestic_media_rules} > domestic-media-rules.txt
-          curl -sSL ${foreign_media_rules} > foreign-media-rules.txt
-          curl -sSL ${blacklist_rules} > blacklist-rules.txt
+          # curl -sSL ${microsoft_rules} > microsoft-rules.txt
+          # curl -sSL ${global_network_rules} > global-network-rules.txt
+          # curl -sSL ${domestic_media_rules} > domestic-media-rules.txt
+          # curl -sSL ${foreign_media_rules} > foreign-media-rules.txt
+          # curl -sSL ${blacklist_rules} > blacklist-rules.txt
           for x in $(find $pwd -name "*rules.txt" | xargs ls -d); 
           do 
             echo ${x}
