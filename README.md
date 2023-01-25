@@ -77,13 +77,13 @@ rule-providers:
   Proxy:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/foreign-media-rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/proxy-rules.txt"
     path: ./providers/rule-proxy.yaml
     interval: 86400
   Microsoft:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/ms-rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/microsoft-rules.txt"
     path: ./providers/rule-microsoft.yaml
     interval: 86400
   Backlist:
@@ -147,13 +147,13 @@ rule-providers:
   Proxy:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/foreign-media-rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/proxy-rules.txt"
     path: ./providers/rule-proxy.yaml
     interval: 86400
   Microsoft:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/ms-rules.txt"
+    url: "https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@202212170251/microsoft-rules.txt"
     path: ./providers/rule-microsoft.yaml
     interval: 86400
   Backlist:
