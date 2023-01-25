@@ -1,7 +1,9 @@
 payload:
   - DOMAIN-KEYWORD,porn
-  - DOMAIN-KEYWORD,pornhub
+  - DOMAIN-KEYWORD,sex
   - DOMAIN-KEYWORD,xvideos
   - DOMAIN-SUFFIX,madou.club
   - DOMAIN-SUFFIX,wnacg.org
+  - DOMAIN-SUFFIX,xhamster.com
+  - DOMAIN-SUFFIX,xnxx.com
   
