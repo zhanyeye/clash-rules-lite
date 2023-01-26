@@ -1,7 +1,5 @@
 payload:
   - DOMAIN-KEYWORD,xbox  
-  - DOMAIN-KEYWORD,ubisoft 
   - DOMAIN-KEYWORD,microsoft
   - DOMAIN-SUFFIX,xboxlive.com
   - DOMAIN-SUFFIX,gamepass.com
-  - DOMAIN-SUFFIX,ubi.com
