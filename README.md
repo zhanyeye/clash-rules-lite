@@ -24,7 +24,9 @@
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/microsoft-rules.txt
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/blacklist-rules.txt</pre>
 </p>
-
+<p align="center">
+已稳定使用2年的机场推荐：https://sspcloud.net/#/register?code=4L83QEU9
+</p>
 
 ### 工具介绍
 + Clash 默认的GFW代理规则内容太多，使用过程中明显感觉到有延迟
