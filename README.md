@@ -2,7 +2,7 @@
   <img width="100px" src="https://user-images.githubusercontent.com/35565811/214613019-6fd702b7-445e-4663-8471-f47005241724.png" align="center" alt="GitHub Readme Stats" />
   <h2 align="center">Clash Rules Lite</h2>
  
-  <p align="center">🍒 自定义代理规则，精简匹配规则。</p>
+  <p align="center">🍒 自定义代理规则，精简匹配规则 (<b>代理匹配速度明显提升</b>)。</p>
  
   <p align="center">
     <a href="https://github.com/zhanyeye/clash-rules-lite/blob/master/.github/workflows/release.yml">
@@ -110,7 +110,7 @@ rule-providers:
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">启动流水线示意图</div>
+    padding: 2px;">拷贝一份配置订阅文件</div>
   </center>
 </div>
 
@@ -177,15 +177,16 @@ rule-providers:
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">启动流水线示意图</div>
+    padding: 2px;">运行修改后的本地配置</div>
   </center>
 </div>
 
 
 ### 自定义代理规则
-+ 修改代码仓中以 rule.txt 结尾的文件即可
++ 修改代码仓中以 rule.txt 结尾的文件即可, 也可以自己新增以rule.txt结尾的配置，都会生效
 + 修改后需要在clash中刷新，并重启clash才能生效
 
+> clash desktop 中刷新操作
 <div align="center">
   <center>
     <img width="800" style="border-radius: 0.3125em;
@@ -198,3 +199,33 @@ rule-providers:
     padding: 2px;">Clash 客户端上刷新 providers, 并重启clash</div>
   </center>
 </div>
+
+> OpenClash 中刷新操作
+
+配置文件管理 -> 规则集文件列表 -> 删除所有文件 -> 返回概览 -> 应用配置
+<div align="center">
+  <center>
+    <img width="800" style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">OpenClash上删除规则集文件, 并重新应用配置</div>
+  </center>
+</div>
+
++ jsdelivr CDN 缓存没有更新怎么办？
+
+> 这是因为 jsdelivr CDN 缓存的原因，一般来说是 24小时刷新缓存，但是这样太慢了！   
+> 不过 jsdelivr CDN 也提供手动刷新缓存的方法：
+```
+# 假设你的文件 URL 是这样：
+https://cdn.jsdelivr.net/xxx/xxx...
+
+# 那么把域名中的 cdn 改为 purge 即可：
+https://purge.jsdelivr.net/xxx/xxx...
+```
+然后访问这个文件新 URL 就会提示你刷新成功！
+
