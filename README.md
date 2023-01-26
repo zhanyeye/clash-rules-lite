@@ -145,7 +145,7 @@ rule-providers:
 </div>
 
 ### 在OpenWrt的OpenClash中生效
-> OpenWrt 是一个软路由系统，如果你没有用到，请看下一节 “在 Clash Desktop 中生效”
+> OpenWrt 是一个软路由系统，如果你没有用到，请忽略”
 
 需要更新配置文件的`rules`和 `rule-providers`, 注意：
 + 用户名需要替换成用户自己的!!!
