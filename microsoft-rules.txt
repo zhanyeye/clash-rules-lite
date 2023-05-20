@@ -77,4 +77,3 @@ payload:
   - DOMAIN-SUFFIX,wunderlist.com
   - DOMAIN-SUFFIX,yammer.com
   - DOMAIN-SUFFIX,yammerusercontent.com
-  - DOMAIN-SUFFIX,bingapis.com
