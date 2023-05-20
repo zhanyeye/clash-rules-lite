@@ -16,7 +16,6 @@ payload:
   - DOMAIN-SUFFIX,azure.net
   - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,azurerms.com
-  - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,cloudapp.net
   - DOMAIN-SUFFIX,cloudappsecurity.com
   - DOMAIN-SUFFIX,edgesuite.net
