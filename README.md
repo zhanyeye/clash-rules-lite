@@ -103,9 +103,9 @@ proxy-groups:
     <b>- { name: '🐟 漏网之鱼', type: select, proxies: ['🔰 节点选择'] }</b>
     <b>- ...</b>
 rules:
+  - RULE-SET,Backlist,🛑 全球拦截
   - RULE-SET,Proxy,🔰 节点选择
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Backlist,🛑 全球拦截
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
 rule-providers:
@@ -154,9 +154,9 @@ rule-providers:
 + rules 中所属的group需要替换成自己的 `proxy-groups`!!!
 ```
 rules:
+  - RULE-SET,Backlist,🛑 全球拦截
   - RULE-SET,Proxy,🔰 节点选择
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Backlist,🛑 全球拦截
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
 rule-providers:
