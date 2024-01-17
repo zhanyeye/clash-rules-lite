@@ -1,3 +1,4 @@
 payload:
   - DOMAIN-SUFFIX,v2ex.com
   - DOMAIN-SUFFIX,wikipedia.org
+  - DOMAIN-SUFFIX,discord.gg
