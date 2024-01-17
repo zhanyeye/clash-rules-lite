@@ -30,4 +30,3 @@ payload:
   - DOMAIN-SUFFIX,discordstatus.com
   - DOMAIN-SUFFIX,hammerandchisel.ssl.zendesk.com
   - DOMAIN-SUFFIX,watchanimeattheoffice.com
-  - DOMAIN-SUFFIX,cdn.discordapp.com
