@@ -25,7 +25,7 @@
   https://cdn.jsdelivr.net/gh/zhanyeye/clash-rules-lite@release/blacklist-rules.txt</pre>
 </p>
 <p align="center">
-已稳定使用2年的机场推荐：https://sspcloud.net/#/register?code=4L83QEU9
+已稳定使用2年的机场推荐：https://inet.ssp.lol/#/register?code=p5BXMYcJ
 </p>
 
 ### 工具介绍
