@@ -1,0 +1,8 @@
+payload:
+  - DOMAIN-SUFFIX,.cn
+  - DOMAIN-KEYWORD,xbox  
+  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-SUFFIX,gamepass.com
+  - DOMAIN-SUFFIX,.home
+
